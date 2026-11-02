@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Deepawali Utsav v9",
+  "version": "9.0",
+  "description": "Multi-color Phuljhadi cursor, 10s rocket blast & 30s Mega Rocket blast with new sound, lightning video progress bars, and smart search bar diya.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Deepawali Settings"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

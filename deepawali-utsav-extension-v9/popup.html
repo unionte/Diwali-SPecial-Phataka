@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 270px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #1e1e24;
+      color: #f5f5f7;
+      padding: 16px;
+      margin: 0;
+      border-top: 3px solid #ffd700;
+      box-sizing: border-box;
+    }
+    h3 {
+      margin: 0 0 14px 0;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffd700;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 8px;
+    }
+    .control {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    select {
+      background: #2b2b36;
+      color: #ffd700;
+      border: 1px solid #ffd700;
+      border-radius: 5px;
+      padding: 4px 8px;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+      accent-color: #ffd700;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .btn-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    button {
+      flex: 1;
+      padding: 8px;
+      background: linear-gradient(90deg, #d4af37, #ffd700);
+      color: #1a1a1a;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    button.mega {
+      background: linear-gradient(90deg, #ff006e, #ffbe0b);
+      color: #fff;
+    }
+    button:hover {
+      filter: brightness(1.08);
+    }
+    .hint {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <h3>🪔 Deepawali Utsav v9</h3>
+  
+  <div class="control">
+    <label for="phuljhadiCursor">✨ Phuljhadi Cursor</label>
+    <input type="checkbox" id="phuljhadiCursor" checked>
+  </div>
+
+  <div class="control">
+    <label for="phuljhadiColor">🎨 Phuljhadi Color</label>
+    <select id="phuljhadiColor">
+      <option value="rainbow">🌈 Auto Multi-Color</option>
+      <option value="gold">🌟 Classic Gold</option>
+      <option value="pink">🌸 Neon Pink</option>
+      <option value="cyan">💎 Electric Cyan</option>
+      <option value="emerald">💚 Emerald Green</option>
+      <option value="purple">🔮 Royal Purple</option>
+    </select>
+  </div>
+
+  <div class="control">
+    <label for="rocketSend">🚀 10s Rocket & 30s Mega Blast</label>
+    <input type="checkbox" id="rocketSend" checked>
+  </div>
+
+  <div class="control">
+    <label for="searchDecor">🪔 Search Bar Diya & Lights</label>
+    <input type="checkbox" id="searchDecor" checked>
+  </div>
+
+  <div class="control">
+    <label for="lightningBars">⚡ Lightning Progress Bars</label>
+    <input type="checkbox" id="lightningBars" checked>
+  </div>
+
+  <div class="btn-row">
+    <button id="testRocket">🚀 Normal Rocket</button>
+    <button id="testMegaRocket" class="mega">🎆 Mega Blast</button>
+  </div>
+  <div class="hint">10s click rocket cooldown • Every 30s triggers a HUGE Mega Sky-Shot!</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
